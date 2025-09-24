@@ -1,86 +1,222 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>พอร์ตฟอลิโอของฉัน</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Document</title>
+    </head>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Navbar hover effect */
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Background Gradient */
+        body {
+            background: linear-gradient(to right, #6982ff, #50fcff54);
+            /* Gradient from Pink to Orange */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Home Section */
+        #home {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        #about,
+        #contact {
+            background-color: #fff;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #fff;
+            padding: 60px 20px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #fff;
+            color: #333;
+            padding: 60px 20px;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+                    card-container {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 250px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+                text-align: center;
+            }
+
+            .card img {
+                width: 100%;
+                /* ขยายรูปให้เต็มความกว้างของ .card */
+                height: 300px;
+                /* ความสูงคงที่ */
+                object-fit: cover;
+                /* ครอบรูปให้เต็มกรอบโดยไม่เสียสัดส่วน */
+                border-radius: 8px;
+                display: block;
+            }
+    </style>
+
 <body>
-
-    <header>
-        <h1>สวัสดีครับ ผมชื่อ [ชื่อของคุณ]</h1>
-        <p>นักพัฒนาเว็บไซต์ | ออกแบบ UI | เขียนโปรแกรม</p>
-        <nav>
-            <a href="#about">เกี่ยวกับฉัน</a>
-            <a href="#projects">ผลงาน</a>
-            <a href="#contact">ติดต่อ</a>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>เกี่ยวกับฉัน</h2>
-        <p>ผมเป็นนักพัฒนาเว็บไซต์ที่มีความสนใจในเทคโนโลยีใหม่ ๆ และชอบเรียนรู้สิ่งใหม่ตลอดเวลา</p>
-    </section>
-
-    <section id="projects">
-        <h2>ผลงาน</h2>
+    <!-- Navbar -->
+    <nav>
         <ul>
-            <li><strong>เว็บไซต์ร้านกาแฟ</strong> - พัฒนาโดยใช้ HTML, CSS, JavaScript</li>
-            <li><strong>แอปจัดการงาน</strong> - เขียนด้วย React</li>
+            <p></p>
+            <li><a href="heng.html">HENG</a></li>
+            <li><a href="sarina.html">SARINA</a></li>
+            <li><a href="port.html">HOME</a></li>
         </ul>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Rush Project</h1>
+        <p>Showcasing My Work and Projects</p>
     </section>
 
-    <section id="contact">
-        <h2>ติดต่อ</h2>
-        <p>อีเมล: yourname@example.com</p>
-        <p>โทร: 081-234-5678</p>
-    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card-container">
+            <a href="heng.html" class="">
+                <div class="card">
+                <img src="IMG_20250924_185046 (1).webp" alt="Project 1">
+                <h3>HENG</h3>
+                <p>Name : Chonnakan Chanachon</p>
+                <p>Age : 19 years old </p>
+            </div>
+            </a>
+            <a href="sarina.html" class="">
+                <div class="card">
+                <img src="IMG_9532.webp" alt="Project 2">
+                <h3>Sarina</h3>
+                <p>Name : Wannasa Champathed</p>
+                <p>Age : 19 years old </p>
+            </div>
+            </a>
+        </div>
 
-    <footer>
-        <p>© 2025 พอร์ตฟอลิโอโดย [ชื่อของคุณ]</p>
-    </footer>
 
 </body>
+
 </html>
-<style>
-    body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-}
+</div>
 
-header {
-    background-color: #007acc;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
+</body>
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-</style>
+</html>
